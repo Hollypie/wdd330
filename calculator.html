@@ -1,0 +1,45 @@
+<!doctype html>
+<script src="https://en.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+
+    // ...Your code...
+    let calculator = {
+        // Object properties to store the values
+        a: null,
+        b: null,
+
+        // read() method to prompt the user for input and store values in a and b
+        read() {
+            this.a = parseInt(prompt("Please enter the first value:"));
+            this.b = parseInt(prompt("Please enter the second value:"));
+        },
+
+        // sum() method to return the sum of a and b
+        sum() {
+            return this.a + this.b;
+        },
+
+        // mul() method to return the product of a and b
+        mul() {
+            return this.a * this.b;
+        },
+
+        sub() {
+            return this.a - this.b;
+        },
+
+        div() {
+            return this.a / this.b;
+        }
+    };
+
+    calculator.read();
+    alert(calculator.sum());
+    alert(calculator.mul());
+    alert(calculator.sub());
+    alert(calculator.div());
+
+</script>
+
+</html>
